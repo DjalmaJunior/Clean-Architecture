@@ -10,3 +10,8 @@ export const ServerRequestError = (): HttpResponse => ({
   statusCode: 500,
   body: new ServerError()
 })
+
+export const SuccessRequest = (data: any): HttpResponse => ({
+  statusCode: 200,
+  body: data
+})
